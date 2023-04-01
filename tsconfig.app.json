@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "exclude": ["node_modules", "src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "api-models": ["./src/core/api-models"],
+      "x-components": ["./src/core/components"],
+      "x-ts-essentials": ["./src/core/ts-essentials"],
+      "x-utils": ["./src/core/utils"]
+    }
+  }
+}

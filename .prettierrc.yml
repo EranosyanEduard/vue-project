@@ -1,0 +1,7 @@
+bracketLine: true
+printWidth: 100
+semi: false
+singleAttributePerLine: true
+singleQuote: true
+trailingComma: none
+vueIndentScriptAndStyle: true

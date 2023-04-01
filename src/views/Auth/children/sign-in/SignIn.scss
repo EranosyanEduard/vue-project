@@ -1,0 +1,13 @@
+.form {
+  &__fieldset {
+    border: none;
+    display: grid;
+    row-gap: var(--s-spacer-4);
+  }
+
+  &__reference:last-child::before {
+    color: var(--v-text-1-base);
+    content: 'Нет аккаунта? ';
+    cursor: default;
+  }
+}

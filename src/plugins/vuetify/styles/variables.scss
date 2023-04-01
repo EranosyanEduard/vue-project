@@ -1,0 +1,52 @@
+// Переопределение значений scss-переменных
+
+$btn-letter-spacing: 1.25px;
+$btn-text-transform: none;
+$container-max-widths: (
+  'sm': min(90.25%, 1200px)
+);
+$headings: (
+  'h2': (
+    'size': 2.5rem,
+    'weight': 700,
+    'line-height': 3rem,
+    'letter-spacing': 0,
+    'text-transform': false
+  ),
+  'h6': (
+    'size': 1.125rem,
+    'weight': 500,
+    'line-height': 1.25rem,
+    'letter-spacing': 0,
+    'text-transform': false
+  ),
+  'body-2': (
+    'size': 0.875rem,
+    'weight': 400,
+    'line-height': 1rem,
+    'letter-spacing': 0,
+    'text-transform': false
+  ),
+  'button': (
+    'size': 0.875rem,
+    'weight': 500,
+    'line-height': 1rem,
+    'letter-spacing': 0,
+    'text-transform': false
+  ),
+  'caption': (
+    'size': 0.75rem,
+    'weight': 400,
+    'line-height': 0.875rem,
+    'letter-spacing': 0,
+    'text-transform': false
+  )
+);
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 0,
+  'md': 1024px,
+  'lg': 1600px - 24px,
+  'xl': 1920px - 24px
+);
+$text-field-filled-full-width-outlined-slot-min-height: 48px;

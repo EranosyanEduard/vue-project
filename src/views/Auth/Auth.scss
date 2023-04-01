@@ -1,0 +1,11 @@
+.auth {
+  &__column:last-child {
+    width: 576px;
+  }
+
+  &__reference:last-child::before {
+    color: var(--v-text-2-base);
+    content: '\00A9\0020 Сервис автоматизирован на платформе ';
+    cursor: default;
+  }
+}
