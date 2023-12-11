@@ -1,0 +1,2 @@
+'*.css': stylelint
+'*.{ts,vue}': eslint
