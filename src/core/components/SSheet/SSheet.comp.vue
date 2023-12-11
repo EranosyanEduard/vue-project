@@ -80,7 +80,7 @@ const style = computed<StyleValue>(() => [h.measure.api.style])
 .v-sheet {
   background-color: var(--theme-card-background);
   border-color: var(--theme-card-border);
-  border-radius: var(--v-sheet-border-radius, 0);
+  border-radius: var(--v-sheet-bd-rs, 0);
   box-shadow: var(--v-sheet-elevation-umbra, var(--theme-shadow-umbra-0)),
     var(--v-sheet-elevation-penumbra, var(--theme-shadow-penumbra-0)),
     var(--v-sheet-elevation-ambient, var(--theme-shadow-ambient-0));
