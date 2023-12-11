@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import bem from 'common-bem'
-import { isNumber } from 'lodash'
+import { lt, toNumber } from 'lodash'
 import type { Dictionary } from 'ts-essentials'
 import { computed, type PropOptions, type PropType } from 'vue'
 import { z } from 'zod'
-import { useTheme, UTILS } from '@/core/hooks'
 import type { V } from '@/core/d-ts'
+import { useTheme, UTILS } from '@/core/hooks'
 
 /**
  * Счётчик, предоставляемый UI-библиотекой Vuetify.
@@ -44,22 +44,13 @@ const h = { theme: useTheme(props) } as const
 
 /** CSS-классы компонента */
 const classes = computed(() => [
-  b({ error: hasError.value }),
+  b({ error: lt(props.max, props.value) }),
   h.theme.api.classes(h.theme.api.isDark1)
 ])
 
 /** Контент компонента */
 const content = computed(() => {
-  return hasError.value ? `${props.value} / ${props.max}` : props.value
-})
-
-/** Флаг "value > max" */
-const hasError = computed(() => {
-  return z.coerce
-    .number()
-    .positive()
-    .lt(isNumber(props.value) ? props.value : parseInt(props.value, 10))
-    .safeParse(props.max).success
+  return toNumber(props.max) > 0 ? `${props.value} / ${props.max}` : props.value
 })
 </script>
 

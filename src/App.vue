@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { SSheet } from './core/components'
+import { ref } from 'vue'
+import { SMessages, SSheet } from './core/components'
+
+const messages = ref<string[]>([])
 </script>
 
 <template>
   <div id="app">
     <SSheet />
+    <SMessages :value="messages" />
   </div>
 </template>

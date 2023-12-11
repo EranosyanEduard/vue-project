@@ -78,22 +78,22 @@ const style = computed<StyleValue>(() => [h.measure.api.style])
 /** @define v-sheet */
 
 .v-sheet {
-  background-color: var(--md-theme-card-background);
-  border-color: var(--md-theme-card-border);
+  background-color: var(--theme-card-background);
+  border-color: var(--theme-card-border);
   border-radius: var(--v-sheet-border-radius, 0);
-  box-shadow: var(--v-sheet-elevation-umbra, var(--u-shadow-umbra-0)),
-    var(--v-sheet-elevation-penumbra, var(--u-shadow-penumbra-0)),
-    var(--v-sheet-elevation-ambient, var(--u-shadow-ambient-0));
-  color: var(--md-theme-text-primary);
+  box-shadow: var(--v-sheet-elevation-umbra, var(--theme-shadow-umbra-0)),
+    var(--v-sheet-elevation-penumbra, var(--theme-shadow-penumbra-0)),
+    var(--v-sheet-elevation-ambient, var(--theme-shadow-ambient-0));
+  color: var(--theme-text-primary);
 }
 
 .v-sheet--outlined {
   border-style: var(--v-sheet-outlined-border-width, thin) solid
-    var(--md-theme-divider-color);
+    var(--theme-divider-color);
   box-shadow: none;
 }
 
 .v-sheet--shaped {
-  border-radius: var(--u-rounded-xl) 0;
+  border-radius: var(--theme-rounded-xl) 0;
 }
 </style>

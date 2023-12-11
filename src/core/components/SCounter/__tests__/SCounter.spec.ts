@@ -45,7 +45,7 @@ describe('Компонент SCounter', () => {
 
   test('Должен "сообщать" о превышении максимального значения', () => {
     expect(
-      m({ propsData: { max: 10, value: 15 } }).classes('error--text')
+      m({ propsData: { max: 10, value: 15 } }).classes('v-counter--error')
     ).toBe(true)
   })
 })
