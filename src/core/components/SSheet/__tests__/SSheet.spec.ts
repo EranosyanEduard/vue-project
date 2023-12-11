@@ -3,9 +3,10 @@ import { mount, type MountOptions, type Wrapper } from '@vue/test-utils'
 import SSheet from '../SSheet.comp.vue'
 
 describe('Компонент SSheet', () => {
-  const m = (opts: MountOptions<Vue> = {}): Wrapper<Vue> =>
+  const m = (opts: MountOptions<Vue> = {}): Wrapper<Vue> => {
     // @ts-expect-error wtf?
-    mount(SSheet, opts)
+    return mount(SSheet, opts)
+  }
 
   test('Должен отображать цветной компонент', () => {
     const wrapper = m({ propsData: { color: 'blue lighten-1' } })

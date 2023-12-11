@@ -17,4 +17,5 @@
   /* text */
 
   --theme-text-primary: white;
+  --theme-text-secondary: rgba(255 255 255 / 70%);
 }

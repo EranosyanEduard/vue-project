@@ -13,4 +13,5 @@
   /* text */
 
   --theme-text-primary: rgba(0 0 0 / 87%);
+  --theme-text-secondary: rgba(0 0 0 / 60%);
 }
