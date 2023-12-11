@@ -1,0 +1,16 @@
+/** @define theme */
+
+.theme--light {
+  /* card */
+
+  --theme-card-background: white;
+  --theme-card-border: var(--theme-card-background);
+
+  /* divider */
+
+  --theme-divider-color: rgba(0 0 0 / 12%);
+
+  /* text */
+
+  --theme-text-primary: rgba(0 0 0 / 87%);
+}

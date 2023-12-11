@@ -15,7 +15,10 @@ module.exports = {
     'no-return-await': 'error',
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     // Мои настройки:
-    '@typescript-eslint/explicit-function-return-type': ['error', { allowedNames: ['use'] }]
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      { allowedNames: ['use'] }
+    ]
   },
   overrides: [
     {

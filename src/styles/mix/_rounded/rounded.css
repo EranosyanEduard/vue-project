@@ -1,0 +1,32 @@
+.rounded,
+.rounded-md {
+  border-radius: var(--theme-rounded-md);
+}
+
+.rounded-0 {
+  border-radius: var(--theme-rounded-0);
+}
+
+.rounded-sm {
+  border-radius: var(--theme-rounded-sm);
+}
+
+.rounded-lg {
+  border-radius: var(--theme-rounded-lg);
+}
+
+.rounded-xl {
+  border-radius: var(--theme-rounded-xl);
+}
+
+.rounded-xxl {
+  border-radius: var(--theme-rounded-xxl);
+}
+
+.rounded-circle {
+  border-radius: var(--theme-rounded-circle);
+}
+
+.rounded-pill {
+  border-radius: var(--theme-rounded-pill);
+}
