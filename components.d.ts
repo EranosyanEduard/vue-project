@@ -17,6 +17,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     VApp: typeof import('vuetify/lib')['VApp']
+    VAutocomplete: typeof import('vuetify/lib')['VAutocomplete']
     VBtn: typeof import('vuetify/lib')['VBtn']
     VCarousel: typeof import('vuetify/lib')['VCarousel']
     VCarouselItem: typeof import('vuetify/lib')['VCarouselItem']

@@ -24,18 +24,12 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       sass: {
-        additionalData: ['@import "@/plugins/vuetify/styles/variables.scss"', ''].join('\n')
+        additionalData: [''].join('\n')
       }
     }
   },
   resolve: {
-    alias: [
-      ['@', './src'],
-      ['api-models', './src/core/api-models'],
-      ['x-components', './src/core/components'],
-      ['x-ts-essentials', './src/core/ts-essentials'],
-      ['x-utils', './src/core/utils']
-    ].reduce<Record<string, string>>((acc, it) => {
+    alias: [['@', './src']].reduce<Record<string, string>>((acc, it) => {
       acc[it[0]] = fileURLToPath(new URL(it[1], import.meta.url))
       return acc
     }, {})

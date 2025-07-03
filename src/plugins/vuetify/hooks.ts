@@ -4,4 +4,6 @@ import vuetify from './instance'
 /**
  * Возвращает экземпляр фреймворка vuetify.
  */
-export const useVuetify: Factory<{ $vuetify: Framework }> = () => ({ $vuetify: vuetify.framework })
+export const useVuetify: () => { readonly $vuetify: Framework } = () => ({
+  $vuetify: vuetify.framework
+})
