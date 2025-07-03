@@ -23,6 +23,7 @@ declare module 'vue' {
     VCarouselItem: typeof import('vuetify/lib')['VCarouselItem']
     VCol: typeof import('vuetify/lib')['VCol']
     VContainer: typeof import('vuetify/lib')['VContainer']
+    VDataTable: typeof import('vuetify/lib')['VDataTable']
     VForm: typeof import('vuetify/lib')['VForm']
     VRow: typeof import('vuetify/lib')['VRow']
     VTextField: typeof import('vuetify/lib')['VTextField']
